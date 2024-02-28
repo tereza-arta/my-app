@@ -9,7 +9,7 @@ int main() {
   std::string date_time = ctime(&system_time);
 
   std::cout << "Current day and time:\t" << date_time << "\n";
-  std::cout << "Wait for 10 seconds...\n";
+  std::cout << "Wait for 10 seconds... \n";
   sleep(10);
   std::cout << "Exit from cpp_file\n";
 
