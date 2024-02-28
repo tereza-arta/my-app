@@ -1,4 +1,4 @@
-name: Workflow for my-app
+name: Workflow for my_app
 
 on:
   push:
@@ -11,17 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-      - name: Print message
-        run: echo "Hello world!"
-        
-      - name: Install of gcc packages
+      - name: Installing gcc package
         run: |
           sudo apt update -y
           sudo apt install build-essential -y
 
-      - name: Run of code
+      - name: Running code
         working-directory: ./app
         run: |
           g++ file.cpp -o file.gpp
@@ -29,6 +27,3 @@ jobs:
 
           
         
-    
-
-    
