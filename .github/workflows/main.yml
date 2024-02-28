@@ -21,8 +21,11 @@ jobs:
           sudo apt update -y
           sudo apt install build-essential -y
 
-      - name: Cecking directory
-        run: pwd
+      - name: Run of code
+        working-directory: ./app
+        run: |
+          g++ file.cpp -o file.gpp
+          ./file.gpp
 
           
         
