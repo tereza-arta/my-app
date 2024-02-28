@@ -2,9 +2,9 @@ name: Workflow for my_app
 
 on:
   push:
-    branches: [ main ]
+    branches: [ yml-demo ]
   pull_request:
-    branches: [ main ]
+    branches: [ yml-demo ]
 
 jobs: 
   build:
