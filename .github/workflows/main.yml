@@ -14,12 +14,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Installing gcc package
+      - name: Install gcc package
         run: |
           sudo apt update -y
           sudo apt install build-essential -y
 
-      - name: Running code
+      - name: Run code
         working-directory: ./app
         run: |
           g++ file.cpp -o file.gpp
